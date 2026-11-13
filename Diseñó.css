@@ -1,0 +1,33 @@
+
+*{box-sizing:border-box}
+:root{--azul:#173b67;--azul2:#245b91;--fondo:#eef4fa;--texto:#243447;--borde:#d5e0eb}
+body{margin:0;background:var(--fondo);font-family:Arial,Helvetica,sans-serif;color:var(--texto);line-height:1.65}
+body>h1,body>h2,body>h3,body>p,body>ul,body>ol,body>dl,body>table,body>form,body>pre,body>video,body>audio,body>img,body>hr,body>button,body>section,body>div:not(.barra-navegacion):not(.contenedor){margin-left:auto;margin-right:auto;max-width:1050px}
+h1{background:linear-gradient(120deg,var(--azul),var(--azul2));color:white;text-align:center;padding:27px 18px;margin:0 auto 28px;letter-spacing:.5px}
+h2{color:var(--azul);border-bottom:2px solid #d7e3ef;padding-bottom:6px;margin-top:30px}
+h3{color:var(--azul2)}
+p,ul,ol,dl{max-width:1050px;padding-left:22px;padding-right:22px}
+p{font-size:16px}
+table{width:calc(100% - 44px);max-width:1050px;margin:15px auto 25px;border-collapse:collapse;background:white;box-shadow:0 2px 8px #183b5a12}
+th{background:var(--azul);color:white;text-align:left}
+th,td{padding:11px 13px;border:1px solid var(--borde);vertical-align:top}
+tr:nth-child(even) td{background:#f6f9fc}
+a{color:#145b9a;font-weight:600;text-decoration:none}
+a:hover{text-decoration:underline;color:#0c3760}
+button,input,select,textarea{font:inherit}
+button,input[type=submit],input[type=reset]{background:var(--azul2);color:white;border:0;border-radius:6px;padding:10px 16px;cursor:pointer}
+input,select,textarea{padding:9px;border:1px solid #b8c9d9;border-radius:5px;max-width:100%}
+form{background:white;padding:20px;border:1px solid var(--borde);border-radius:10px;margin-top:15px;margin-bottom:25px}
+form p{padding:0}
+pre{background:#14263a;color:#e9f2fb;padding:18px;border-radius:9px;overflow-x:auto;white-space:pre-wrap;margin-top:14px;margin-bottom:18px}
+code{font-family:Consolas,monospace}
+.barra-navegacion{background:#102b49;padding:12px 20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.barra-navegacion a{color:white;background:#244b72;padding:8px 13px;border-radius:5px;font-size:14px}
+.barra-navegacion a:hover{background:#3975ad;text-decoration:none}
+.contenedor{max-width:1100px;margin:0 auto;padding:0 20px 28px}
+.tarjeta{background:white;border:1px solid var(--borde);border-radius:10px;padding:17px 20px;margin:18px auto;max-width:1050px;box-shadow:0 3px 12px #183b5a0c}
+.nota{background:#e2edf8;border-left:4px solid var(--azul2);padding:12px 16px;margin:16px auto;max-width:1050px}
+.demo{background:white;border:1px solid var(--borde);border-radius:10px;padding:18px;margin:18px auto;max-width:1050px}
+.pie{max-width:1050px;margin:30px auto 0;padding:18px 22px;text-align:center;color:#60758a;border-top:1px solid var(--borde)}
+img,video{max-width:100%;height:auto}
+@media(max-width:650px){h1{font-size:24px}body{font-size:15px}.contenedor{padding:0 12px 20px}th,td{padding:8px;font-size:14px}}
